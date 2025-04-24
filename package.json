@@ -1,0 +1,33 @@
+{
+  "name": "sphere-indexer-service",
+  "version": "1.0.0",
+  "description": "Service to index Sphere deposit events from a subgraph",
+  "main": "dist/indexer.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/indexer.js",
+    "dev": "tsx src/indexer.ts"
+  },
+  "keywords": [
+    "indexer",
+    "graphql",
+    "subgraph",
+    "sphere",
+    "polygon",
+    "usdc"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "graphql": "^16.9.0",
+    "graphql-request": "^7.1.0",
+    "pg": "^8.12.0",
+    "tsx": "^4.19.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.11",
+    "@types/pg": "^8.11.6",
+    "typescript": "^5.5.3"
+  }
+}
